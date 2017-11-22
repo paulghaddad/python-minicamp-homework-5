@@ -2,29 +2,43 @@
   <link rel="stylesheet" type="text/css" href="/static/styles/styles.css">
 </head>
 
-<h1 class="header">My Pets</h1>
+<body>
+  <div class="main">
+    <h1 class="header">My Pets</h1>
 
-<form id="new-pet-form" action="/new-pet" method="POST" onsubmit="return validateForm()">
-  Name:
-  <input id="nameInput" name="name" />
-  <br>
-  Species:
-  <input id="speciesInput" name="species" />
-  <br>
-  Age:
-  <input id="ageInput" name="age" />
-  <br>
-  <input id="submit" type="submit" value="Submit" />
-</form>
+    <form id="new-pet-form" action="/new-pet" method="POST">
+      Name:
+      <input id="nameInput" name="name" />
+      <br>
+      Species:
+      <input id="speciesInput" name="species" />
+      <br>
+      Age:
+      <input id="ageInput" name="age" />
+      <br>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
 
-<a href="/pets">Pets List</a>
+    <a href="/pets">Pets List</a>
 
-<p>Apply to our full-time and part-time courses to take accelerate your education.</p>
-<p>Our courses teach you the skills you need to take the next step in becoming a software engineer.</p>
-<p>We provide job support during and after the course to help you continue to develop your skills and find the right opportunities.</p>
-Learn more <a href="https://www.lambdaschool.com">here.</a>
+    <div>
+      <label for="color">What color do you want?</label>
+      <br>
+      <input type="text" id="color" />
+      <br>
+      <button id="colorSubmit">Change the color!</button>
+     </div>
 
+     <div>
+      <button id="hideContent">Hide Everything!</button>
+     </div>
+     </div>
 
-<script src="/static/scripts/home.js"></script>
+    <p>Apply to our full-time and part-time courses to take accelerate your education.</p>
+    <p>Our courses teach you the skills you need to take the next step in becoming a software engineer.</p>
+    <p>We provide job support during and after the course to help you continue to develop your skills and find the right opportunities.</p>
+    Learn more <a href="https://www.lambdaschool.com">here.</a>
+  </div>
 
-
+  <script src="/static/scripts/home.js"></script>
+</body>
